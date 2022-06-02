@@ -24,6 +24,8 @@ if
       // Creating a default database file to store database in.
       io.file.save:/data/chinook.db
          .:
+      log.info:Chinook database file created
+         filename:/data/chinook.db
 
 /*
  * Evicting cache item related to SQLite database
