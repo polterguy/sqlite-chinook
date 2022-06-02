@@ -10,3 +10,5 @@ if
       // File doesn't exists, hence moving it.
       io.file.move:/modules/sqlite-chinook/magic.startup/chinook.sql
          .:/etc/sqlite/templates/
+      log.info:Chinook database moved into etc folder
+         filename:/etc/sqlite/templates/chinook.sql
