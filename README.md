@@ -9,7 +9,7 @@ Notice, the SQL script itself is the copyright of Luis Rocha, and we have no ide
 terms, since it was hosted at CodePlex at a page that no longer exists. However, CodePlex exclusively
 served open source projects as far as we know, and since the database is only intended for educational
 purposes and to play with Magic, we're pretty sure of that our usage is covered by what's considered
-_"fair use"_.
+_"fair use"_. If your name is Luis Rocha, and you can clarify this for us, we'd love to know.
 
 ## Data Model
 
