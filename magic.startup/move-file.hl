@@ -1,0 +1,6 @@
+
+/*
+ * Moves the chinook.sql file into template folder for SQLite
+ */
+io.file.move:/modules/sqlite-chinook/magic.startup/chinook.sql
+   .:/etc/sqlite/templates/
