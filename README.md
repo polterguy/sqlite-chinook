@@ -6,7 +6,10 @@ and play around with the Crudifier. This module also create a chinook.db file in
 folder automatically, and flushes your server side cache, allowing you to 
 
 Notice, the SQL script itself is the copyright of Luis Rocha, and we have no idea of its license
-terms, since it was hosted at codeplex at a page that no longer exists.
+terms, since it was hosted at CodePlex at a page that no longer exists. However, CodePlex exclusively
+served open source projects as far as we know, and since the database is only intended for educational
+purposes and to play with Magic, we're pretty sure of that our usage is covered by what's considered
+_"fair use"_.
 
 ## Data Model
 
