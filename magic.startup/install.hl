@@ -12,3 +12,20 @@ if
          .:/etc/sqlite/templates/
       log.info:Chinook database moved into etc folder
          filename:/etc/sqlite/templates/chinook.sql
+
+/*
+ * Creates the chinook database
+ */
+if
+   not
+      io.file.exists:/data/chinook.db
+   .lambda
+
+      // Creating a default database file to store database in.
+      io.file.save:/data/chinook.db
+         .:
+
+/*
+ * Evicting cache item related to SQLite database
+ */
+cache.set:magic.sql.databases.sqlite.generic
