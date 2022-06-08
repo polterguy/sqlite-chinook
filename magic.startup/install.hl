@@ -1,18 +1,24 @@
 
-/*
- * Moves the chinook.sql file into template folder for SQLite,
- * creates the database, and executes the SQL script.
- */
-if
-   not
-      io.file.exists:/etc/sqlite/templates/chinook.sql
-   .lambda
+// Moves all SQL scripts into correct folder.
+io.file.list:/modules/sqlite-chinook/magic.startup/
+for-each:x:-/*
+   if
+      strings.ends-with:x:@.dp/#
+         .:.sql
+      .lambda
+         strings.concat
+            .:/etc/sqlite/templates/
+            get-value:x:@.dp/#
+         if
+            not
+               io.file.exists:x:@strings.concat
+            .lambda
 
-      // File doesn't exists, hence moving it.
-      io.file.move:/modules/sqlite-chinook/magic.startup/chinook.sql
-         .:/etc/sqlite/templates/
-      log.info:Chinook database SQL script moved into etc folder
-         filename:/etc/sqlite/templates/chinook.sql
+               // File doesn't exists, hence moving it.
+               io.file.move:x:@.dp/#
+                  .:/etc/sqlite/templates/
+               log.info:SQL script moved into etc folder
+                  filename:x:@.dp/#
 
 // Creates the chinook database file.
 if
