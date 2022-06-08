@@ -3,12 +3,14 @@
 Chinook SQLite database script plugin for Magic that installs the Chinook database into
 your _"/etc/sqlite/templates/"_ folder for you, for then to execute the SQL script, creating
 the Chinook database for you, allowing you to play around with the CRUD generator with a real
-database.
+database. This plugin also contains a handful of example SQL scripts, and hence provides a
+perfect starting ground for you to teach yourself SQL if you are a student of SQL.
 
 ## Installation
 
 Install this module in your Magic backend, and play around with the Chinook database any ways
-you feel for.
+you feel for. Load and execute any script starting out with the name _"chinook\_"_ to play
+with the database using some example scripts distributed with the plugin itself.
 
 ## Data Model
 
