@@ -32,3 +32,5 @@ CodePlex exclusively served open source projects as far as we know, and since th
 is only intended for educational purposes and to play with Magic, we're pretty sure of
 that our usage is covered by what's considered _"fair use"_. If you are the copyright holder
 of this SQL script, and you can clarify this for us, we'd love to know.
+
+Some of the SQL scripts in this package have been taken from [PythonStarter](https://github.com/Olamiotan/PythonStarter).
