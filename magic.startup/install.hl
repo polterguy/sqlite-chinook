@@ -2,13 +2,15 @@
 // Moves all SQL scripts into correct folder.
 io.file.list:/modules/sqlite-chinook/magic.startup/
 for-each:x:-/*
+   strings.split:x:@.dp/#
+      .:/
    if
       strings.ends-with:x:@.dp/#
          .:.sql
       .lambda
          strings.concat
             .:/etc/sqlite/templates/
-            get-value:x:@.dp/#
+            get-value:x:@strings.split/0/-
          if
             not
                io.file.exists:x:@strings.concat
