@@ -15,6 +15,8 @@ you feel for.
 The Chinook data model represents a digital media store, including tables for artists, albums,
 media tracks, invoices and customers.
 
+![Screenshot](https://raw.githubusercontent.com/polterguy/sqlite-chinook/master/chinook.jpeg)
+
 ## Sample Data
 
 Media related data was created using real data from an iTunes Library. Customer and employee
