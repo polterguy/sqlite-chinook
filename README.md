@@ -1,4 +1,4 @@
-# SQLite chinook database
+# SQLite Chinook database
 
 Chinook SQLite database script plugin for Magic that installs the Chinook database into
 your _"/etc/sqlite/templates/"_ folder for you, for then to execute the SQL script, creating
